@@ -1,0 +1,89 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.8.12/jquery.csv.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+    <script src="graph.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <section class="section-1">
+      <div class="title">
+        <h1>งบประมาณ 11 หน่วยงานและงบประมาณทั้งหมดประจำปี</h1>
+        <h5>งบประมาณ 11 หน่วยงานคืองบประมาณที่สนใจและนำมาพิจารณาเป็นหลักและเป็นงบประมาณที่มีข้อมูลในทุกปีที่ทำการสืบค้นข้อมูล</h5>
+      </div>
+      <div class="area-1">
+        <div class="box-chart" id="chart1"></div>
+        <div class="box-checkbox">
+          <div id="cb-group1">
+            <input type="checkbox" class="checkbox" id="cb-11" checked />
+            งบประมาณ 11 หมวดหมู่
+            <input type="checkbox" class="checkbox" id="cb-all" checked />
+            งบประมาณทั้งหมด
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-4">
+      <div class="title">
+        <h1>Average budget Department</h1>
+        <h5>งบประมาณรายจ่ายเฉลี่ยแต่ละปีของแต่ละหน่วยงานทั้ง11หน่วยงานที่สนใจ</h5>
+      </div>
+      <div class="area-4">
+        <div class="box-chart" id="chart4"></div>
+      </div>
+    </section>
+
+    <section class="section-2">
+      <div class="title"><h1>Time Series</h1></div>
+      <div class="area-2">
+        <div class="box-chart" id="chart2"></div>
+        <div class="box-checkbox">
+          <button class="btn btn-info" type="button" id="bt-group2">
+            reset
+          </button>
+          <div id="cb-group2">
+            <input type="checkbox" class="checkbox" id="cb-total" checked />
+            total
+            <input type="checkbox" class="checkbox" id="cb-2y" checked />
+            2-year-SMA
+            <input type="checkbox" class="checkbox" id="cb-3y" checked />
+            3-year-SMA
+            <input type="checkbox" class="checkbox" id="cb-4y" checked />
+            4-year-SMA
+            <input type="checkbox" class="checkbox" id="cb-5y" checked />
+            5-year-SMA
+            <input type="checkbox" class="checkbox" id="cb-2yct" checked />
+            2-year-SMA-center
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-3">
+      <div class="title">
+        <h1>Predict vs Total Budget</h1>
+        <h5>งบประมาณรายจ่ายรวมที่ทำนายผ่านการทำregression หลังทำfeature selection แบบlow variance filtering โดยเหลือหน่วยงานที่นำมาพิจารณาดังนี้</h5>
+        <h5>กระทรวงการคลัง, กระทรวงเกษตรและสหกรณ์, กระทรวงคมนาคม, กระทรวงมหาดไทย, กระทรวงศึกศาธิการ, กระทรวงสาธารณสุข, งบประมาณหน่วยงานอื่นๆ</h5>
+      </div>
+      <div class="area-3">
+        <div class="box-chart" id="chart3"></div>
+      </div>
+    </section>
+
+    <section class="section-5">
+      <h6>Phukla Rainnukool 5910503774</h6>
+    </section>
+  </body>
+</html>

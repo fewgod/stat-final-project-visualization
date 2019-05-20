@@ -1,0 +1,45 @@
+body {
+  background: #1c2143;
+}
+
+section {
+  text-align: center;
+  padding: 20px;
+}
+
+section.section-1 {
+  color: #1c2143;
+  background: #fbfbf5;
+}
+
+section.section-2 {
+  color: #1c2143;
+  background: #5ecad1ff;
+}
+
+section.section-3 {
+  color: aliceblue;
+  background: #1c2143;
+}
+
+section.section-4 {
+  color: #1c2143;
+  background: #f3cd74ff;
+}
+
+section.section-5 {
+  font-size: 12px;
+  margin: 0;
+  padding: 4px 0 4px 0;
+  color: grey;
+  background: black;
+}
+
+.box-chart {
+  display: inline-block;
+}
+
+.box-checkbox {
+  display: inline-block;
+  width: 100%;
+}
